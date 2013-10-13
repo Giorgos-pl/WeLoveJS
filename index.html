@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aviators - byaviators.com">
+
+    <link rel="stylesheet" href="assets/js/rs-plugin/css/settings.css" type="text/css">
+    <link rel="stylesheet" href="assets/js/rs-plugin/css/fullwidth.css" type="text/css">    
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,700" rel="stylesheet" type="text/css">
+    <link href="assets/icons/pictopro-normal/style.css" rel="stylesheet" type="text/css">
+    <link href="assets/icons/pictopro-outline/style.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/bootstrap-responsive.css" type="text/css">
+    <link rel="stylesheet" href="assets/fancybox/jquery.fancybox.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/infine.css" type="text/css">
+
+    <!--[if lt IE 9]>
+       	<link rel="stylesheet" id="ie8-css"  href="assets/css/ie8.css" type="text/css" media="all">
+	<![endif]-->
+
+	<title>WeLoveJS</title>
+</head>
+
+<body data-spy="scroll" data-target=".main-navigation">
+
+<div class="navigation">
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </a>
+
+                <div class="logo">
+                    <a href="#nav-header" class="roll">
+                        <span>
+                            <img src="assets/pictures/welovejslogo.png" width="156" height="42"/>
+                        </span>
+                    </a>
+                </div><!-- /.logo -->
+
+                <div class="main-navigation nav-collapse collapse">
+                    <ul class="nav">
+                        <li class="active"><a href="#nav-header">Home</a></li>
+                        <li><a href="#nav-speakers">Speakers</a></li>
+                        <li><a href="#nav-pricing">Tickets</a></li>
+                        <!--<li><a href="#nav-testimonials">Testimonials</a></li>-->
+                        <li><a href="#nav-contact">Contact</a></li>
+                    </ul>
+                </div><!-- /.main-navigation -->
+            </div><!-- /.container -->
+        </div><!-- /.navbar-inner -->
+    </div><!-- /.main-navigation -->
+</div><!-- /.navigation -->
+
+<div id="nav-header" class="header-wrapper">
+    <div class="header">
+
+        <div class="fullwidthbanner-container">         
+           <div class="fullwidthbanner">
+                <ul class="unstyled">
+                    <li class="first-slide" data-transition="fade">
+                        <img src="assets/pictures/background-conference-1.jpg" data-fullwidthcentering="on">
+
+                        <div class="caption sfr caption-main" data-x="center" data-y="200" data-speed="900" data-start="0" data-easing="easeOutBack" fullwidthcentering="on">
+                            <div class="header-item">
+                                <div>
+                                    <h1>Be ready for a new session!</h1>
+                                    <h4>WeLoveJS is a quarterly event in Barcelona for Javascripters.</h4>
+                                </div><!-- /.title -->
+                            </div><!-- /.header-item -->
+
+                            <div class="countdown wrapper">
+                                <div class="countdown-container">
+                                    <div class="clock row">
+
+                                        <div class="clock-item clock_days countdown-time-value span3">
+                                            <div class="wrap">
+                                                <div class="inner">
+                                                    <div id="canvas_days"></div>
+
+                                                    <div class="text">
+                                                        <p class="val">0</p>
+                                                        <p class="type_days type-time">DAYS</p>
+                                                    </div><!-- /.text -->
+                                                </div><!-- /.inner -->
+                                            </div><!-- /.wrap -->
+                                        </div><!-- /.clock-item -->
+
+                                        <div class="clock-item  clock_hours countdown-time-value span3">
+                                            <div class="wrap">
+                                                <div class="inner">
+                                                    <div id="canvas_hours"></div>
+
+                                                    <div class="text">
+                                                        <p class="val">0</p>
+                                                        <p class="type_hours type-time">HOURS</p>
+                                                    </div><!-- /.text -->
+                                                </div><!-- /.inner -->
+                                            </div><!-- /.wrap -->
+                                        </div><!-- /.clock-item -->
+
+                                        <div class="clock-item clock_minutes countdown-time-value span3">
+                                            <div class="wrap">
+                                                <div class="inner">
+                                                    <div id="canvas_minutes"></div>
+
+                                                    <div class="text">
+                                                        <p class="val">0</p>
+                                                        <p class="type_minutes type-time">MINUTES</p>
+                                                    </div><!-- /.text -->
+                                                </div><!-- /.inner -->
+                                            </div><!-- /.wrap -->
+                                        </div><!-- /.clock-item -->
+
+                                        <div class="clock-item clock_seconds countdown-time-value span3">
+                                            <div class="wrap">
+                                                <div class="inner">
+                                                    <div id="canvas_seconds"></div>
+
+                                                    <div class="text">
+                                                        <p class="val">0</p>
+                                                        <p class="type_seconds type-time">SECONDS</p>
+                                                    </div><!-- /.text -->
+                                                </div><!-- /.inner -->
+                                            </div><!-- /.wrap -->
+                                        </div><!-- /.clock-item -->
+                                    </div><!-- /.countdown-container -->
+
+                                    <div class="clock-done">
+                                        <p>We have started!</p>
+                                        <a href="#" class="btn btn-primary btn-start">Watch the live stream <i class="icon icon-normal-right-arrow-circle"></i></a>
+                                    </div><!-- /.clock-done -->
+                                </div><!-- /.countdown-container -->
+                            </div><!-- /.countdown -->
+                        </div><!-- /.caption -->
+                    </li>
+
+                    <li class="second-slide" data-transition="fade">
+                        <img src="assets/pictures/background-conference-3.jpg" fullwidthcentering="on">
+
+                        <div class="caption sfr caption-main" data-x="center" data-y="300" data-speed="900" data-start="0" data-easing="easeOutBack">
+                            <div class="header-item">
+                                <div>
+                                    <h2>Don't miss<br>the last seats here</h2>
+                                </div>
+                            </div><!-- /.header-item -->
+                        </div>
+
+                        <div class="caption fade" data-x="800" data-y="250" data-speed="100" data-start="0" data-easing="fade">
+                            <div class="last-seats"><a href="#nav-pricing" class="roll"><p>Get the last<br>FREE seats!</p></a></div>
+                        </div>
+                    </li>
+                </ul><!-- /.revolution -->
+           </div>        
+        </div>
+    </div><!-- /.header -->
+</div><!-- /.header-wrapper -->
+
+<div id="nav-subscribe" class="subscribe-wrapper">
+    <div class="subscribe">
+        <div class="container">
+            <div class="form row">
+                <div class="span8 offset2">
+                    <h4>Subscribe and get detailed information</h4>
+
+                    <script type="text/javascript">
+                        <!--
+                        var formrules=new Array(0);
+
+                        //-->
+                    </script>
+                    <script type="text/javascript">
+                        var cfJsHost = (("https:" == document.location.protocol) ? "https://" : "http://");
+                        document.write(unescape("%3Cscript src='" + cfJsHost + "www.123contactform.com/includes/interactive123cf.js?4331' type='text/javascript'%3E%3C/script%3E"));
+                    </script>
+
+                    <script type="text/javascript">
+                        <!--
+                        var selectedfield='';
+                        var multiPageCurent=1;
+                        var multiPageTotal=1;
+                        function InputActions(field,id) {
+                            var textcolor='#999999';
+                            var hltextcolor='#999999';
+
+                            if (id==selectedfield) { /* alert('do nothing'); */ }
+                            else
+                            {
+                                // first we unhighlight the previous field, if any
+                                if (selectedfield!='')
+                                {
+                                    lid=selectedfield;
+                                    lidsec=lid.replace('row','rowsec');
+
+                                    // reparam culoare textlabels
+                                    var tr=document.getElementById(lid);
+
+                                    if (document.getElementsByClassName)
+                                    {
+                                        var textlabels = tr.getElementsByClassName('class123-label');
+                                        for (j=0;j<textlabels.length;j++)
+                                            textlabels[j].style.color=textcolor;
+                                    }
+                                    else
+                                    {
+                                        var textlabels=tr.getElementsByTagName('label');
+                                        for (j=0;j<textlabels.length;j++)
+                                            if (textlabels[j].className.indexOf('class123-label')>-1) textlabels[j].style.color=textcolor;
+                                    }
+                                    var oldbg='';
+                                    if (document.getElementById('errorflag'+lid)!=null)
+                                        oldbg=document.getElementById('errorflag'+lid).value;
+
+                                    // reparam culoare bg td
+                                    var tds = tr.getElementsByTagName('div');
+                                    for (j=0;j<tds.length;j++)
+                                        tds[j].parentNode.parentNode.style.background=oldbg;
+
+                                    // reparam culoare bg td sec
+                                    if (document.getElementById(lidsec) != null)
+                                    {
+                                        var trsec=document.getElementById(lidsec);
+                                        tds = trsec.getElementsByTagName('div');
+                                        for (j=0;j<tds.length;j++)
+                                            tds[j].parentNode.parentNode.style.background=oldbg;
+                                    }
+                                }
+                                // then we highlight the new one
+                                selectedfield=id;
+
+                                lid=id;
+                                lidsec=lid.replace('row','rowsec');
+
+                                // modificam culoare textlabels
+                                var tr=document.getElementById(lid);
+                                if (document.getElementsByClassName)
+                                {
+                                    var textlabels = tr.getElementsByClassName('class123-label');
+                                    for (j=0;j<textlabels.length;j++)
+                                        textlabels[j].style.color=hltextcolor;
+                                }
+                                else
+                                {
+                                    var textlabels=tr.getElementsByTagName('label');
+                                    for (j=0;j<textlabels.length;j++)
+                                        if (textlabels[j].className.indexOf('class123-label')>-1) textlabels[j].style.color=hltextcolor;
+                                }
+
+                                // modificam culoare bg td
+                                var tds = tr.getElementsByTagName('div');
+                            }
+                            // now the field rules
+
+                            InputRules2('beginning','0');
+                        }
+                        //IB: functie utila pt cand vrem sa introducem virgula de formatare la price
+                        // function addDecimalPoints(inputElement) {
+                        // inputElement.value=inputElement.value.replace(/\D/g, '');
+                        // var inputValue = inputElement.value.replace(',', '').split('').reverse().join(''); // reverse
+                        // var newValue = '';
+                        // for (var i = 0; i < inputValue.length; i++) {
+                        // if (i % 3 == 0) {
+                        // newValue += ',';
+                        // }
+                        // newValue += inputValue[i];
+                        // }
+                        // newValue = newValue.split('').reverse().join('');
+                        // inputElement.value = newValue.substr(0, newValue.length-1);
+                        // }
+
+                        function IsFullDateEntered(c_id) {
+                            if((document.getElementById('id123-control'+c_id+'-1') != null)&&(document.getElementById('id123-control'+c_id+'-2')!=null)&&(document.getElementById('id123-control'+c_id+'-3')!=null))
+                            {
+                                if  ((document.getElementById('id123-control'+c_id+'-1').value!='')&&(document.getElementById('id123-control'+c_id+'-2').value!='')&&(document.getElementById('id123-control'+c_id+'-3').value!=''))
+                                    document.getElementById('id123-control'+c_id).value=document.getElementById('id123-control'+c_id+'-1').value+'/'+document.getElementById('id123-control'+c_id+'-2').value+'/'+document.getElementById('id123-control'+c_id+'-3').value;
+                            }
+                        }
+                        //-->
+                    </script>
+                    <div class="row">
+                        <div class="span6 offset1">
+                            <form  class="form" onsubmit="RefreshFrameHeight(1); return checkSubmitAllowed();" action="http://www.123contactform.com/form-722120/SUBSCRIBE" id="mainform123" method="post" name="mainform123" enctype="multipart/form-data">
+                                <div>
+                                    <input type="hidden" name="action" value="verify"/>
+                                    <input type="hidden" name="special_autoresponder" id="special_autoresponder" value=""/>
+                                    <input type="hidden" name="language" value="en"/>
+                                    <input type="hidden" name="languageChanged" value="no"/>
+                                    <input type="hidden" id="errorflagrow1" value=""/>
+                                    <input id="id123-control5571480" name="control5571480"  onclick="InputActions(this,'row1');" onkeyup=" InputActions(this,'row1');  " onchange="InputRules(5571480); ;  " type="email" class="span6 subscription-field" name="subscribe" placeholder="Your e-mail" required="required">
+                                    <input type="hidden" name="go_back_and_edit" id="go_back_and_edit" value="0" />
+                                    <button>
+                                        <span class="icon-normal-right-arrow-small"></span>
+                                    </button>
+                                </div>
+
+                                <div style="height:1px; display: none; visibility: hidden;">
+                                    <input type="text" name="email"/>
+                                </div>
+
+                                <input type="hidden" name="hiddenfields" id="hiddenfields" value=""/>
+                                <input type="hidden" name="hiddenfields_pages" id="hiddenfields_pages" value=""/>
+                                <input type="hidden" name="activepage" id="activepage" value="1"/>
+                                <input type="hidden" name="totalpages" id="totalpages" value="1"/>
+                                <input type="hidden" name="nextpagenr" id="nextpagenr" value="2"/>
+                                <input type="hidden" name="prevpagenr" id="prevpagenr" value="0"/>
+                                <script type="text/javascript">
+                                    InputRules('firsttime');
+                                </script>
+                                <input type="hidden" name="usage" value="e"/>
+                            </form>
+
+                            <div class="success">
+                                <p>
+                                    Thank you for your interest.<br>
+                                    <i class="icon icon-normal-heart-rounded"></i>
+                                </p>
+                            </div><!-- /.success -->
+                        </div><!-- /.span6 -->
+                    </div><!-- /.row -->
+                </div><!-- /.span8 -->
+            </div><!-- /.form -->
+        </div><!-- /.container -->
+    </div><!-- /.subscribe -->
+</div><!-- /.subscribe-wrapper -->
+
+<div id="nav-features" class="features-wrapper">
+    <div class="features">
+        <div class="features-inner container">
+            <div class="row">
+                <div class="item orange span4">
+                    <div class="row">
+                        <div class="wrapper-icon span1">
+							<div class="background-icon">
+								<i class="icon icon-outline-pointer"></i>
+                            </div><!-- /.background-icon -->
+                        </div><!-- /.wrapper-icon -->
+
+                        <div class="text-wrapper span3 pull-right">
+                            <h3>2 talks</h3>
+
+                            <p class="features-description">
+                                Two talks about the most interesting topics with the most professional speakers around the world.
+                            </p>
+                        </div><!-- /.text-wrapper -->
+                    </div><!-- /.row -->
+                </div><!-- /.item -->
+
+                <div class="item blue span4">
+                    <div class="row">
+                        <div class="wrapper-icon span1">
+							<div class="background-icon">
+								<i class="icon icon-outline-clock"></i>
+                            </div><!-- /.background-icon -->
+                        </div><!-- /.wrapper-icon -->
+
+                        <div class="text-wrapper span3">
+                            <h3>2 workshops</h3>
+
+                            <p class="features-description">
+                                Three hours workshop about the topics exposed in talks to learn how to work with these new technologies.
+                            </p>
+                        </div><!-- /.text-wrapper -->
+                    </div><!-- /.row -->
+                </div><!-- /.item -->
+
+                <div class="item yellow span4">
+                    <div class="row">
+                        <div class="wrapper-icon span1">
+							<div class="background-icon">
+								<i class="icon icon-outline-megaphone"></i>
+							</div><!-- /.background-icon -->
+                        </div><!-- /.wrapper-icon -->
+
+                        <div class="text-wrapper span3">
+                            <h3>2 or more great speakers</h3>
+
+                            <p class="features-description">
+                                The most professional speakers about the most interesting topics.
+                            </p>
+                        </div><!-- /.text-wrapper -->
+                    </div><!-- /.row -->
+                </div><!-- /.item -->
+            </div><!-- /.row -->
+        </div><!-- /.features-inner -->
+    </div><!-- /.features -->
+</div><!-- /.features-wrapper -->
+
+<div id="nav-speakers" class="speakers-wrapper">
+    <div class="container">
+        <h2>Great speakers with great topics</h2>
+        <h4>Precisely choosed big names from whole world</h4>
+
+        <div class="speakers">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#tab-1" data-toggle="tab">Auditorium</a></li>
+                <li><a href="#tab-2" data-toggle="tab">Training Room</a></li>
+                <li><a href="#tab-3" data-toggle="tab">Bunker Room</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="tab-1">
+                    <div class="row speaker">
+                        <div class="span2 image center">
+                            <div class="image-box">
+                                <img src="assets/pictures/raul.jimenez.png" alt="">
+                            </div><!-- /.image-box -->
+                        </div><!-- /.image -->
+
+                        <div class="span7">
+                            <p class="name">Raul Jimenez</p>
+                            <p class="company">Freelance</p>
+                            <p class="talk-title">Problemas encontrados sobre la marcha haciendo el proyecto Videogular con AngularJS</p>
+                            <p class="time"><span class="time-start">11:00</span> - 12:00</p>
+                        </div><!-- /.span7 -->
+
+                        <div class="span3">
+							<div class="about">
+								<h4>About Raul</h4>
+
+								<p>
+                                    Desarrollador con m&aacute;s de 10 a&ntilde;os en web, multimedia y m&oacute;viles. Ha desarrollado soluciones de v&iacute;deo para Telecinco, RTVE, Cuatro TV, Vocento y Grupo Z entre otros. Actualmente trabaja como desarrollador freelance en Barcelona ofreciendo consultor&iacute;a en ActionScript, JavaScript, vídeo streaming y desarrollo m&oacute;vil.
+                                </p>
+							</div><!-- /.about -->
+                        </div><!-- /.span3 -->
+                    </div><!-- /.speaker -->
+                   
+
+                    <div class="row speaker">
+                        <div class="span2 image center">
+                            <div class="image-box">
+                                <img src="assets/pictures/marc.rubino.jpg" alt="">
+                            </div>
+                        </div><!-- /.image -->
+
+                        <div class="span7">
+                            <p class="name">Marc Rubi&ntilde;o</p>
+                            <p class="company">Key Consultant en Pasiona</p>
+                            <p class="talk-title">Introducción a Knockout.js y el patrón MVVM desde Javascript</p>
+                            <p class="time"><span class="time-start">12:00</span> - 13:00</p>
+                        </div><!-- /.span7 -->
+
+                        <div class="span3">
+							<div class="about">
+								<h4>About Marc</h4>
+
+								<p>
+                                    Marc Rubi&ntilde;o Key Consultant en Pasiona, entusiasta de la tecnolog&iacute;a con más de 10 a&ntilde;os de experiencia en aplicaciones web y consultor&iacute;a t&eacute;cnica. Fundador del grupo de usuarios .Net LonetCamp. Colaborador habitual con los grupos de usuarios y la fundaci&oacute;n Techdencias. Microsoft MVP ASP.NET-IIS desde el 2011.
+                                </p>
+							</div><!-- /.about -->
+                        </div><!-- /.span3 -->
+                    </div><!-- /.speaker -->
+
+                </div><!-- /.tab-1 -->
+                
+
+                <div class="tab-pane fade" id="tab-2">
+                    <div class="row speaker">
+                        <div class="span2 image center">
+                            <div class="image-box">
+                                <img src="assets/pictures/raul.jimenez.png" alt="">
+                            </div>
+                        </div><!-- /.image -->
+
+                        <div class="span7">
+                            <p class="name">Raul Jimenez</p>
+                            <p class="company">Freelance</p>
+                            <p class="talk-title">Workshop: Desarrollo de un plugin para Videogular con AngularJS and Bootstrap 3</p>
+                            <p class="time"><span class="time-start">14:30</span> - 17:30</p>
+                        </div><!-- /.span7 -->
+
+                        <div class="span3">
+							<div class="about">
+								<h4>About Raul</h4>
+
+								<p>
+                                    Desarrollador con m&aacute;s de 10 a&ntilde;os en web, multimedia y m&oacute;viles. Ha desarrollado soluciones de v&iacute;deo para Telecinco, RTVE, Cuatro TV, Vocento y Grupo Z entre otros. Actualmente trabaja como desarrollador freelance en Barcelona ofreciendo consultor&iacute;a en ActionScript, JavaScript, vídeo streaming y desarrollo m&oacute;vil.
+                                </p>
+							</div><!-- /.about -->
+                        </div><!-- /.span3 -->
+                    </div><!-- /.speaker -->
+
+                </div><!-- /.tab-2 -->
+
+                <div class="tab-pane fade" id="tab-3">
+                    <div class="row speaker">
+                        <div class="span2 image center">
+                            <div class="image-box">
+                                <img src="assets/pictures/marc.rubino.jpg" alt="">
+                            </div>
+                        </div><!-- /.image -->
+
+                        <div class="span7">
+                            <p class="name">Marc Rubi&ntilde;o</p>
+                            <p class="company">Key Consultant en Pasiona</p>
+                            <p class="talk-title">Workshop: Desarrollo de una tienda online con Knockout y MVVM</p>
+                            <p class="time"><span class="time-start">14:30</span> - 17:30</p>
+                        </div><!-- /.span7 -->
+
+                        <div class="span3">
+                            <div class="about">
+                                <h4>About Marc</h4>
+
+                                <p>
+                                    Marc Rubi&ntilde;o Key Consultant en Pasiona, entusiasta de la tecnolog&iacute;a con más de 10 a&ntilde;os de experiencia en aplicaciones web y consultor&iacute;a t&eacute;cnica. Fundador del grupo de usuarios .Net LonetCamp. Colaborador habitual con los grupos de usuarios y la fundaci&oacute;n Techdencias. Microsoft MVP ASP.NET-IIS desde el 2011.
+                                </p>
+                            </div><!-- /.about -->
+                        </div><!-- /.span3 -->
+                    </div><!-- /.speaker -->
+
+                    <div class="row speaker">
+                        <div class="span2 image center">
+                            <div class="image-box">
+                                <img src="assets/pictures/fernando.escolar-2.jpg" alt="">
+                            </div>
+                        </div><!-- /.image -->
+
+                        <div class="span7">
+                            <p class="name">Fernando Escolar</p>
+                            <p class="company">Pasiona</p>
+                            <p class="talk-title">Workshop: Desarrollo de una tienda online con Knockout y MVVM</p>
+                            <p class="time"><span class="time-start">14:30</span> - 17:30</p>
+                        </div><!-- /.span7 -->
+
+                        <div class="span3">
+                            <div class="about">
+                                <h4>About Fernando</h4>
+
+                                <p>
+                                    Entusiasta del desarrollo y especialista en tecnolog&iacute;as .Net de Microsoft. Seguidor de metodolog&iacute;as &aacute;giles y de los grupos Agile Barcelona y Agile Spain. Miembro del grupo de usuarios CatDotNet. Convencido de que hay una forma mejor de hacer las cosas, de que el agilismo ayuda a enriquecer los procesos, y del constante estado de aprendizaje.
+                                </p>
+                            </div><!-- /.about -->
+                        </div><!-- /.span3 -->
+                    </div><!-- /.speaker -->
+
+                </div><!-- /.tab-3 -->
+            </div><!-- /.tab-content -->
+        </div><!-- /.speakers -->
+    </div><!-- /.container -->
+</div><!-- /.speakers-wrapper -->
+
+<div class="parallax-wrapper parallax-first">
+	<div class="parallax">
+		<div class="inner">
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+						<span class="parallax-title">Stay updated and learn the last trends about Javascript.</span>
+					</div><!-- /.span12 -->
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</div><!-- /.inner -->
+	</div><!-- /.parallax -->
+</div><!-- /.parallax-wrapper -->
+
+<div class="content-wrapper">
+    <div class="content">
+        <div class="content-inner">
+			<div class="container">
+				<div class="cycle-slideshow-fade">
+					<div class="cycle-pager"></div>
+
+                    <div class="slide">
+                        <div class="container">
+                            <div class="row">
+                                <div class="image-wrapper image-box span5">
+                                    <div class="image">
+                                        <img src="assets/pictures/4.jpg" alt="">
+                                    </div>
+                                </div><!-- /.image-box -->
+
+                                <div class="span7">
+                                    <h2 class="">Why you should come to WeLoveJS?</h2>
+                                    <h4 class="">And what will be waiting for you there</h4>
+
+                                    <p>
+                                        WeLoveJS is the best place to learn about new Javascript technologies.<br/>
+                                        It's an event for intermediate and advanced Javascript Developers no more basic
+                                        learnings. <br/>
+                                        Learn and practice new technologies and get introduced to them by the most
+                                        experienced mentors.
+                                    </p>
+                                </div><!-- /.span7 -->
+                            </div><!-- /.row -->
+                        </div><!-- /.container -->
+                    </div><!-- /.slide -->
+						
+                    <div class="slide">
+                        <div class="container">
+                            <div class="row">
+                                <div class="image-box span5">
+                                    <div class="image">
+                                        <img src="assets/pictures/2.jpg" alt="">
+                                    </div>
+                                </div><!-- /.image-box -->
+
+                                <div class="span7">
+                                    <h2 class="">Visit the best speakers in the industry.</h2>
+                                    <h4 class="">And learn about the most interesting topics.</h4>
+
+                                    <p>
+                                        WeLoveJS brings you the best speakers about the most awesome and trending topics in Javascript.<br/>
+                                        Get in touch with the most experienced people in Javascript.
+                                    </p>
+                                </div><!-- /.span7 -->
+                            </div><!-- /.row -->
+                        </div><!-- /.container -->
+                    </div><!-- /.slide -->
+
+                    <div class="slide">
+                        <div class="container">
+                            <div class="row">
+                                <div class="image-box span5">
+                                    <div class="image">
+                                        <img src="assets/pictures/3.jpg" alt="">
+                                    </div>
+                                </div><!-- /.image-box -->
+
+                                <div class="span7">
+                                    <h2 class="">Hire the best Javascript Developers</h2>
+                                    <h4 class="">Don't waste time looking for mediocre Javascript Developers.</h4>
+
+                                    <p>
+                                        WeLoveJS is a event for intermediate and advanced Javascript Developers. <br/>
+                                        If you are interested hiring the best Javascript Developers this is the place to start looking for them.<br/>
+                                        Contact us: <a href="mailto:welovejsbcn@gmail.com">welovejsbcn@gmail.com</a>
+                                    </p>
+                                </div><!-- /.span7 -->
+                            </div><!-- /.row -->
+                        </div><!-- /.container -->
+                    </div><!-- /.slide -->
+
+                    <div class="slide">
+                        <div class="container">
+                            <div class="row">
+                                <div class="image-box span5">
+                                    <div class="image">
+                                        <img src="assets/pictures/1.jpg" alt="">
+                                    </div>
+                                </div><!-- /.image-box -->
+
+                                <div class="span7">
+                                    <h2 class="">Find new connections for your business</h2>
+                                    <h4 class="">You will be where the people who use your product is.</h4>
+
+                                    <p>
+                                        If you want to be known by Javascript Developers and their companies this is the place. <br/>
+                                        Propose a talk and be our next speaker/mentor and promote your company and products. <br/>
+                                        Contact us: <a href="mailto:welovejsbcn@gmail.com">welovejsbcn@gmail.com</a>
+                                    </p>
+                                </div><!-- /.span7 -->
+                            </div><!-- /.row -->
+                        </div><!-- /.container -->
+                    </div><!-- /.slide -->
+
+				</div><!-- ./cycle-slideshow-fade -->
+			</div><!-- /.container -->
+		</div><!-- /.content-inner -->
+    </div><!-- /.content -->
+</div><!-- /.content-wrapper -->
+
+<div id="nav-pricing" class="pricing-wrapper">
+    <div class="pricing">
+        <div class="pricing-inner">
+			<div class="container has-options">
+				<h2>Get your ticket now and reserve your chair!</h2>
+				<h4>Precisely choosed big names from whole world</h4>
+                <div class="container">
+                    <div class="row">
+                        <div class="span3">
+                            <div class="square">
+                                <div class="content">
+                                    <p class="price">FREE</p>
+
+                                    <ul class="span3 item">
+                                        <li>
+                                            <div>Talks ticket</div>
+                                        </li>
+                                        <li>Free coffee, tea and milk</li>
+                                    </ul>
+                                    <a class="btn btn-buy" href="http://welovejs6.eventbrite.es/">Get your ticket</a>
+                                </div><!-- /.content -->
+                            </div><!-- /.square -->
+                        </div><!-- /.span3 -->
+
+                        <div class="span3">
+                            <div class="square">
+                                <div class="content">
+                                    <p class="price">FREE</p>
+
+                                    <ul class="span3 item">
+                                        <li>Workshop Angular.js</li>
+                                    </ul>
+
+                                    <a class="btn btn-buy" href="http://welovejs6.eventbrite.es/">Get your ticket</a>
+
+                                </div><!-- /.content -->
+                            </div><!-- /.square -->
+                        </div><!-- /.span3 -->
+
+                        <div class="span3">
+                            <div class="square">
+                                <div class="content">
+                                    <p class="price">FREE</p>
+                                    <ul class="span3 item">
+                                        <li>Workshop Knockout.js</li>
+                                    </ul>
+                                    <a class="btn btn-buy" href="http://welovejs6.eventbrite.es/">Get your ticket</a>
+                                </div><!-- /.content -->
+                            </div><!-- /.square -->
+                        </div><!-- /.square-3 -->
+
+                        <div class="span3">
+                            <div class="square">
+                                <div class="content best-offer">
+                                    <p class="price">FREE</p>
+
+                                    <ul class="span3 item">
+                                        <li>Talks ticket</li>
+                                        <li>Free coffee, tea and milk</li>
+                                        <li>Free lunch</li>
+                                        <li>Angular.js or Knockout.js Workshop</li>
+                                    </ul>
+
+                                    <a class="btn btn-buy" href="http://welovejs6.eventbrite.es/">Get your ticket</a>
+
+                                    <div class="bubble">
+                                        <p>Best Offer</p>
+                                    </div><!-- /.bubble -->
+                                </div><!-- /.content -->
+                            </div><!-- /.square -->
+                        </div><!-- /.span3 -->
+                    </div><!-- /.row -->
+                </div>
+			</div>
+        </div><!-- /.pricing-inner -->
+    </div>
+</div><!-- /.pricing-wrapper -->
+
+<!--<div class="parallax-wrapper parallax-second">-->
+	<!--<div class="parallax">-->
+		<!--<div class="inner">-->
+			<!--<div class="container">-->
+				<!--<div class="row">-->
+					<!--<div class="span12 clearfix">-->
+						<!--<span class="parallax-title">Video Preview</span>-->
+						<!---->
+						<!--<iframe class="video" src="http://player.vimeo.com/video/65669594"></iframe>	-->
+					<!--</div>&lt;!&ndash; /.span12 &ndash;&gt;-->
+				<!--</div>&lt;!&ndash; /.row &ndash;&gt;-->
+			<!--</div>&lt;!&ndash; /.container &ndash;&gt;-->
+		<!--</div>&lt;!&ndash; /.inner &ndash;&gt;-->
+	<!--</div>&lt;!&ndash; /.parallax &ndash;&gt;-->
+<!--</div>&lt;!&ndash; /.parallax-wrapper &ndash;&gt;-->
+
+<!--<div id="nav-testimonials" class="testimonials-wrapper">-->
+    <!--<div class="testimonials">-->
+		<!--<div class="container">-->
+		    <!--<h2>What other said about NWX Conference?</h2>-->
+
+			<!--<div class="cycle-slideshow-vertical" data-cycle-swipe="true">                -->
+				<!--<div class="slide">-->
+					<!--<div class="container">-->
+						<!--<div class="testimonials-inner">-->
+							<!--<div class="span2 testimonials-image item">-->
+								<!--<img class="testimonials-image-box" src="assets/pictures/speakers-2.jpg" alt="">-->
+							<!--</div>&lt;!&ndash; /.testimonials-image &ndash;&gt;-->
+
+							<!--<blockquote class="span6 item"><p>There's a voice that keeps on calling me. Down the road, that's where I'll-->
+								<!--always be. Every stop I make, I make a new friend. Can't stay for long, just turn around and I'm gone-->
+								<!--again.</p>-->
+								<!--<small>Eduar Jones</small>-->
+							<!--</blockquote>-->
+						<!--</div>&lt;!&ndash; /.testimonials-inner &ndash;&gt;-->
+					<!--</div>&lt;!&ndash; /.container &ndash;&gt;-->
+				<!--</div>&lt;!&ndash; /.slide &ndash;&gt;-->
+
+				<!--<div class="slide">-->
+					<!--<div class="container">-->
+						<!--<div class="testimonials-inner">-->
+							<!--<div class="span2 testimonials-image item">-->
+								<!--<img class="testimonials-image-box" src="assets/pictures/speakers-1.jpg" alt="">-->
+							<!--</div>&lt;!&ndash; /.testimonials-image &ndash;&gt;-->
+
+							<!--<blockquote class="span6 item"><p>There's a voice that keeps on calling me. Down the road, that's where I'll-->
+								<!--always be. Every stop I make, I make a new friend. Can't stay for long, just turn around and I'm gone-->
+								<!--again.</p>-->
+								<!--<small>Eduar Jones</small>-->
+							<!--</blockquote>-->
+						<!--</div>&lt;!&ndash; /.testimonials-inner &ndash;&gt;-->
+					<!--</div>&lt;!&ndash; /.container &ndash;&gt;-->
+				<!--</div>&lt;!&ndash; /.slide &ndash;&gt;                -->
+			<!--</div>&lt;!&ndash; /.cycle-slideshow-vertical &ndash;&gt;-->
+
+            <!--<div class="cycle-pager cycle-vertical-pager"></div>-->
+		<!--</div>&lt;!&ndash; /.container &ndash;&gt;-->
+    <!--</div>&lt;!&ndash; /.testimonials &ndash;&gt;-->
+<!--</div>&lt;!&ndash; /.testimonials-wrapper &ndash;&gt;-->
+
+<hr>
+
+<div class="container">
+    <h2 class="page-header">What it’s look like here?</h2>
+
+    <ul class="thumbnails">
+        <li class="span3">
+            <div class="thumbnail">
+                <a href="assets/pictures/venue2.jpg">
+                    <img src="assets/pictures/venue2.jpg" alt="">
+                </a>
+                <h3>Auditorium</h3>
+            </div><!-- /.thumbnail -->
+        </li><!-- /.span3 -->
+
+        <li class="span3">
+            <div class="thumbnail">
+                <a href="assets/pictures/venue1.jpg">
+                    <img src="assets/pictures/venue1.jpg" alt="">
+                </a>
+                <h3>Training Room</h3>
+            </div><!-- /.thumbnail -->
+        </li><!-- /.span3 -->
+
+        <li class="span3">
+            <div class="thumbnail">
+                <a href="assets/pictures/venue3.jpg">
+                    <img src="assets/pictures/venue3.jpg" alt="">
+                </a>
+                <h3>Bunker Room</h3>
+            </div><!-- /.thumbnail -->
+        </li><!-- /.span3 -->
+
+        <li class="span3">
+            <div class="thumbnail">
+                <a href="assets/pictures/venue4.jpg">
+                    <img src="assets/pictures/venue4.jpg" alt="">
+                </a>
+                <h3>Dinning Room</h3>
+            </div><!-- /.thumbnail -->
+        </li><!-- /.span3 -->
+    </ul><!-- /.thumbnails -->
+</div><!-- /.container -->
+
+<div class="our-partners-wrapper">
+    <div class="our-partners container">
+        <div class="our-partners-inner">
+            <h2>Big thanks to our partner</h2>
+
+            <div class="row">
+                <div class="span5 center">
+                    <a href="http://www.softonic.com/"><img class="our-partners-logo" src="assets/pictures/softonic-logo-inline.png" alt=""></a>
+                </div><!-- /.span3 -->
+            </div><!-- /.row -->
+        </div><!-- /.our-partners-inner -->
+    </div><!-- /.our-partners -->
+</div><!-- /.our-partners-wrapper -->
+
+<div class="parallax-wrapper parallax-third">
+	<div class="parallax">
+		<div class="inner">
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+						<span class="parallax-title">Wherever you are, <br> be all there</span>
+					</div><!-- /.span12 -->
+				</div><!-- /.row-->
+			</div><!-- /.container -->
+		</div><!-- /.inner -->
+	</div><!-- /.parallax -->
+</div><!-- /.parallax-wrapper -->
+
+<div id="nav-contact" class="footer-wrapper">
+    <div class="footer container">
+        <div class="footer-inner">
+            <div class="row">
+                <div class="item span4">
+                    <h2>Contact us</h2>
+
+                    <address>
+                        <i class="icon icon-normal-pointer"></i><span class="title"><strong>Softonic</strong></span>
+
+                        <p>
+                            Ed. Meridian <br/>
+                            C/ Rossell&oacute; i Porcel, 21, 17ª floor
+                        </p>
+                        <p>08016 Barcelona, Spain</p>
+                    </address>
+
+                    <address>
+                        <i class="icon icon-normal-mail"></i><a href="mailto:#" class="e-mail">welovejsbcn@gmail.com</a><br>
+                        <i class="icon icon-normal-phone"></i><span class="title">+34 622 78 88 61</span>
+                    </address>
+
+                    <address>
+                        <i class="icon icon-normal-map-pointer"></i><a class="btn btn-grey" href="http://goo.gl/maps/6Pyxw">Show on Google
+                        maps</a>
+                    </address>
+                </div><!-- /.item -->
+
+                <div class="item span8">
+                    <h2>Any questions? Drop us a note</h2>
+
+                    <!-- Do not change the code! -->
+                    <a id="foxyform_embed_link_482844" href="http://www.foxyform.com/">foxyform</a>
+                    <script type="text/javascript">
+                        (function(d, t){
+                            var g = d.createElement(t),
+                                    s = d.getElementsByTagName(t)[0];
+                            g.src = "http://www.foxyform.com/js.php?id=482844&sec_hash=d3dccb6e4f6&width=350px";
+                            s.parentNode.insertBefore(g, s);
+                        }(document, "script"));
+                    </script>
+                    <!-- Do not change the code! -->
+                    <!--<form class="contact-form footer-form" method="post" action="http://html.infine.byaviators.com/contact.php">-->
+                        <!--<div class="row">-->
+                            <!--<div class="span4">-->
+                                <!--<div class="control-group">-->
+                                    <!--<div class="controls">-->
+                                        <!--<input type="text" name="name" placeholder="Your name" required="required">-->
+                                        <!--<span class="icon icon-normal-profile-male"></span>-->
+                                    <!--</div>&lt;!&ndash; /.controls &ndash;&gt;-->
+                                <!--</div>&lt;!&ndash; /.control-group &ndash;&gt;-->
+                            <!--</div>&lt;!&ndash; /.span4 &ndash;&gt;-->
+
+                            <!--<div class="span4">-->
+                                <!--<div class="control-group">-->
+                                    <!--<div class="controls">-->
+                                        <!--<input type="email" name="email" placeholder="Your e-mail" required="required">-->
+                                        <!--<span class="icon icon-normal-mail"></span>-->
+                                    <!--</div>&lt;!&ndash; /.controls &ndash;&gt;-->
+                                <!--</div>&lt;!&ndash; /.control-group &ndash;&gt;-->
+                            <!--</div>&lt;!&ndash; /.span4 &ndash;&gt;-->
+                        <!--</div>&lt;!&ndash; /.row &ndash;&gt;-->
+
+                        <!--<div class="row">-->
+                            <!--<div class="span8">-->
+                                <!--<div class="control-group">-->
+                                    <!--<div class="controls">-->
+                                        <!--<textarea name="message" placeholder="Your message" required="required"></textarea>-->
+                                        <!--<span class="icon icon-normal-pencil"></span>-->
+                                    <!--</div>&lt;!&ndash; /.controls &ndash;&gt;-->
+                                <!--</div>&lt;!&ndash; /.control-group &ndash;&gt;-->
+                            <!--</div>&lt;!&ndash; /.span8 &ndash;&gt;-->
+                        <!--</div>&lt;!&ndash; /.row &ndash;&gt;-->
+
+                        <!--<div class="form-actions">-->
+                            <!--<input type="submit" class="btn btn-send span2" value="Send">-->
+                        <!--</div>&lt;!&ndash; /.form-actions &ndash;&gt;-->
+                    <!--</form>&lt;!&ndash; /.footer-form &ndash;&gt;-->
+                </div><!-- /.item -->
+            </div><!-- /.row -->
+        </div><!-- /.footer-inner -->
+    </div><!-- /.footer -->
+
+    <div id="map"></div><!-- /#map -->
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="copyright span9">
+                    &copy; 2013 Copyright by <a href="welovejs.co.nf" class="">WeLoveJS</a>
+                </div><!-- /.copyright -->
+
+                <div class="icons">
+                    <a href="https://twitter.com/WeLoveJS_Event" class="social-icon"><img src="assets/icons/icon-twitter.png" alt=""></a>
+                    <a href="#" class="social-icon"><img src="assets/icons/icon-youtube.png" alt=""></a>
+                </div><!-- /.icons -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </div><!-- /.footer bottom -->
+</div><!-- /.footer-wrapper -->
+
+
+<script type="text/javascript" src="assets/js/retina.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+<script type="text/javascript" src="assets/js/kinetic.js"></script>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/placeholder.js"></script>
+<script type="text/javascript" src="assets/js/countdown.js"></script>
+<script type="text/javascript" src="assets/js/jquery.cycle2.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.cycle2.carousel.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.cycle2.center.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.cycle2.scrollVert.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.cycle2.swipe.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.cycle2.caption2.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="assets/js/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="assets/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="assets/fancybox/helpers/jquery.fancybox-media.js"></script>
+<script type="text/javascript" src="assets/js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+<script type="text/javascript" src="assets/js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+<script type="text/javascript" src="assets/js/infine.js"></script>
+
+</body>
+</html>
