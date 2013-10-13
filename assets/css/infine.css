@@ -2475,7 +2475,11 @@ p.video_upstream iframe
     height: 228px;
     width: 360px;
 }
-.tab-content .span3
+.tab-archive .span7
 {
-    width: 500px;
+    width: 400px;
+}
+.tab-archive .span3
+{
+    width: auto;
 }
