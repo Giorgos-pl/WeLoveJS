@@ -2470,3 +2470,12 @@ iframe
     height: 505px;
     width: 100%;
 }
+p.video_upstream iframe
+{
+    height: 228px;
+    width: 360px;
+}
+.tab-content .span3
+{
+    width: 500px;
+}
