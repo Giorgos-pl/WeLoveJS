@@ -2483,3 +2483,42 @@ p.video_upstream iframe
 {
     width: auto;
 }
+
+
+table
+{
+    border: white 1px solid;
+    width: 100%;
+}
+tr
+{
+    border: white 1px solid;
+}
+td
+{
+    color: #ff7e5b;
+}
+th
+{
+    color: rgba(255, 255, 255, 0.5);
+}
+td, th
+{
+    border-right: white 1px solid;
+    padding: 10px;
+}
+i
+{
+    width: 16px;
+    height: 16px;
+    padding: 10px;
+    padding-right: 20px;
+}
+.talk
+{
+    background: transparent url(../pictures/megaphone_icon.png) left 9px no-repeat;
+}
+.workshop
+{
+    background: transparent url(../pictures/workshop_icon.png) left 9px no-repeat;
+}
