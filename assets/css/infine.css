@@ -1405,7 +1405,30 @@
     text-decoration: none
 }
 
-.pricing-wrapper .pricing .pricing-inner .btn-buy:hover {
+.pricing-wrapper .pricing .pricing-inner .btn-sold {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+    background-color: #b81d19;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    outline: none;
+    padding: 10px 40px;
+    position: relative;
+    text-decoration: none
+}
+
+.pricing-wrapper .pricing .pricing-inner .btn-buy:hover,
+.pricing-wrapper .pricing .pricing-inner .btn-sold:hover{
     -webkit-box-shadow: inset 0px 0px 0px 2px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: inset 0px 0px 0px 2px rgba(0, 0, 0, 0.2);
     box-shadow: inset 0px 0px 0px 2px rgba(0, 0, 0, 0.2);
@@ -2491,7 +2514,6 @@ p.video_upstream iframe
 {
     padding-bottom: 50px;
 }
-
 table
 {
     border: white 1px solid;
