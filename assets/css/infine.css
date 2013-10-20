@@ -2483,7 +2483,14 @@ p.video_upstream iframe
 {
     width: auto;
 }
-
+#who-we-are iframe
+{
+    height: auto;
+}
+#who-we-are
+{
+    padding-bottom: 50px;
+}
 
 table
 {
