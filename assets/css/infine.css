@@ -2498,6 +2498,11 @@ p.video_upstream iframe
     height: 228px;
     width: 360px;
 }
+.slideshare iframe
+{
+    width: 380px;
+    height: 320px;
+}
 .tab-archive .span7
 {
     width: 400px;

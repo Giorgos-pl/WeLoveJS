@@ -1,8 +1,8 @@
 $(document).ready(function() {
     $('.countdown').countdown(
       {
-        start: new Date(2013, 9, 26, 10, 45, 0, 0).getTime() / 1000,
-        end: new Date(2013, 9, 26, 17, 30, 0, 0).getTime() / 1000,
+        start: new Date(2014, 2, 02, 10, 45, 0, 0).getTime() / 1000,
+        end: new Date(2014, 2, 02, 17, 30, 0, 0).getTime() / 1000,
         now: new Date().getTime() / 1000
       }
     );
