@@ -980,13 +980,14 @@
     border-right: none;
     border-top: none;
     font-family: "Open Sans", "Arial", sans-serif;
-    font-size: 36px;
+    font-size: 26px;
     font-weight: lighter;
     margin-right: 60px;
     padding-left: 0px;
     padding-right: 0px;
     padding-bottom: 20px;
-    outline: none
+    outline: none;
+    line-height: 30px;
 }
 
 .speakers-wrapper .nav-tabs a:hover, .speakers-wrapper .nav-tabs a:focus {
@@ -994,7 +995,8 @@
     background-color: transparent;
     border: none;
     border-bottom: 2px solid;
-    border-bottom-color: rgba(255, 255, 255, 0.4)
+    border-bottom-color: rgba(255, 255, 255, 0.4);
+    line-height: 30px;
 }
 
 .speakers-wrapper .nav-tabs .active a {
@@ -1004,7 +1006,8 @@
     transition: all 0.1s ease;
     color: #fff;
     border-bottom: 2px solid;
-    border-bottom-color: #fff
+    border-bottom-color: #fff;
+    line-height: 30px;
 }
 
 .speakers-wrapper .nav-tabs .active a:hover, .speakers-wrapper .nav-tabs .active a:focus {
@@ -1014,7 +1017,8 @@
     transition: all 0.1s ease;
     color: #fff;
     border-bottom: 2px solid;
-    border-bottom-color: #fff
+    border-bottom-color: #fff;
+    line-height: 30px;
 }
 
 .speakers-wrapper .speaker .image {
@@ -1030,6 +1034,23 @@
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%;
+    margin-bottom: 40px;
+    padding: 10px
+}
+
+.speakers-wrapper .speaker .image_more_than_one {
+    -webkit-box-shadow: inset 0px 0px 25px 5px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 0px 0px 25px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px 0px 25px 5px rgba(0, 0, 0, 0.3);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    -webkit-border-radius: 0%;
+    -moz-border-radius: 0%;
+    -ms-border-radius: 0%;
+    -o-border-radius: 0%;
+    border-radius: 0%;
     margin-bottom: 40px;
     padding: 10px
 }
@@ -2555,4 +2576,7 @@ table i
 .workshop
 {
     background: transparent url(../pictures/workshop_icon.png) left 9px no-repeat;
+}
+em{
+    color: #898989;
 }
